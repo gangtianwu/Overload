@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff"
+
+    >
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/activity_main_view"
+        android:layout_alignParentTop="true"
+         />
+
+    <View
+        android:id="@+id/activity_main_view"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_above="@+id/activity_main_rg_group"
+        android:background="#ffd2d2d2" />
+
+    <RadioGroup
+        android:id="@+id/activity_main_rg_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/activity_main_overrun_vehicle"
+            style="@style/BottomTabStyle"
+            android:background="@drawable/selector_radio_nav"
+            android:checked="true"
+            android:drawableTop="@mipmap/truck_64"
+            android:text="超限车辆" />
+
+        <RadioButton
+            android:id="@+id/activity_main_statistical"
+            style="@style/BottomTabStyle"
+            android:background="@drawable/selector_radio_nav"
+            android:drawableTop="@mipmap/tab_ico_country_nor"
+            android:text="统计数据" />
+
+        <RadioButton
+            android:id="@+id/activity_main_mine"
+            style="@style/BottomTabStyle"
+            android:background="@drawable/selector_radio_nav"
+            android:drawableTop="@mipmap/tab_ico_my_nor"
+            android:text="我的" />
+    </RadioGroup>
+</RelativeLayout>

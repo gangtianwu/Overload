@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/nodata_background"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:background="@color/theme_color"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:gravity="center"
+        >
+        <ImageView
+            android:layout_centerVertical="true"
+            android:id="@+id/activity_query_iv"
+            android:src="@mipmap/back"
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:textColor="@color/mine_info_todo_text_process"
+            android:paddingLeft="10dp"
+            android:gravity="center"
+            android:id="@+id/tv_item"
+            android:textSize="18sp"
+            android:text="车辆查询"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+    <RelativeLayout
+
+        android:id="@+id/password_re"
+        android:layout_width="match_parent"
+        android:layout_height="60.0dip"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/shape_round_sent_pop">
+
+        <EditText
+            android:id="@+id/vehicle_no"
+            android:layout_width="200.0dip"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="25.0dip"
+            android:layout_toRightOf="@+id/vehicle_no_text"
+            android:background="@null"
+            android:ems="10"
+            android:gravity="center|left"
+            android:hint="请输入车牌号码"
+            android:textColor="@color/bigblack"
+            android:textColorHint="@color/gray"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/vehicle_no_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="5dp"
+            android:text="车牌号码:"
+            android:textColor="@color/bigblack"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <!--<View-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="1.0dip"-->
+        <!--android:layout_above="@+id/password_re"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:background="@color/gray" />-->
+
+
+    <RelativeLayout
+        android:id="@+id/rl_begin_date"
+        android:layout_width="fill_parent"
+        android:layout_height="60.0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape_round_sent_pop">
+
+        <TextView
+            android:id="@+id/begin_date"
+            android:layout_width="200.0dip"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="25.0dip"
+            android:layout_toRightOf="@+id/begin_date_text"
+            android:background="@null"
+            android:ems="10"
+            android:gravity="center|left"
+            android:hint="点击选择开始日期"
+            android:textColor="@color/bigblack"
+            android:textColorHint="@color/gray"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/begin_date_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="5dp"
+            android:text="起始日期:"
+            android:textColor="@color/bigblack"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <!--<View-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="1.0dip"-->
+        <!--android:layout_above="@+id/password_re"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:background="@color/gray" />-->
+
+
+    <RelativeLayout
+        android:id="@+id/rl_end_date"
+        android:layout_width="fill_parent"
+        android:layout_height="60.0dip"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape_round_sent_pop">
+
+        <TextView
+            android:id="@+id/end_date"
+            android:layout_width="200.0dip"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="25.0dip"
+            android:layout_toRightOf="@+id/end_date_text"
+            android:background="@null"
+            android:ems="10"
+            android:gravity="center|left"
+            android:hint="点击选择结束日期"
+            android:textColor="@color/bigblack"
+            android:textColorHint="@color/gray"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/end_date_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="5dp"
+            android:text="结束日期:"
+            android:textColor="@color/bigblack"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/bt_guide_star"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/guide_bt_selector"
+        android:paddingBottom="5dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="5dp"
+        android:text="车辆查询"
+        android:textColor="@color/white"
+        android:textSize="25sp" />
+
+
+</LinearLayout>

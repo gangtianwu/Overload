@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/nodata_background"
+    android:orientation="vertical">
+
+    <cn.zhouchaoyuan.excelpanel.ExcelPanel
+        android:id="@+id/id_networkfragment_content_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:left_cell_width="100dp"
+        app:normal_cell_width="48dp"
+        app:top_cell_height="48dp">
+    </cn.zhouchaoyuan.excelpanel.ExcelPanel>
+
+
+</LinearLayout>

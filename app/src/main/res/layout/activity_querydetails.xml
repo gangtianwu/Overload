@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/nodata_background"
+    android:paddingBottom="4dp"
+    >
+    <RelativeLayout
+        android:background="@color/theme_color"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:gravity="center"
+        >
+        <ImageView
+            android:layout_centerVertical="true"
+            android:id="@+id/activity_querydetail_iv"
+            android:src="@mipmap/back"
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:textColor="@color/mine_info_todo_text_process"
+            android:paddingLeft="10dp"
+            android:gravity="center"
+            android:id="@+id/activity_querydetail_tv_item"
+            android:textSize="18sp"
+            android:text="查询详情"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+    <com.jcodecraeer.xrecyclerview.XRecyclerView
+        android:id="@+id/activity_querydetails_rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/nodata_background">
+
+    </com.jcodecraeer.xrecyclerview.XRecyclerView>
+    <ProgressBar
+        android:layout_marginTop="100dp"
+        android:id="@+id/activity_query_pb"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+</LinearLayout>

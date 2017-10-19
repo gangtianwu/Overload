@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/Item_distric_choose_ll_choose_all"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/item_distric_choose_tv_distric"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="15.0dip"
+        android:paddingBottom="15.0dip"
+        android:paddingTop="15.0dip"
+        android:text="北京"
+        android:textColor="#ffffffff"
+        android:textSize="15.0sp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:background="#ff53b6eb" />
+</LinearLayout>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/app_login_bg">
+
+    <ImageView
+        android:id="@+id/imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:src="@mipmap/logo" />
+
+    <TextView
+        android:id="@+id/activity_login_tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageview"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="治超监管"
+        android:textColor="@android:color/white" />
+
+    <FrameLayout
+        android:id="@+id/relativeLayout_fl"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activity_login_tv_name">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="120.0dip"
+            android:layout_below="@+id/activity_login_tv_name"
+            android:layout_marginBottom="20.0dip"
+            android:layout_marginLeft="20.0dip"
+            android:layout_marginRight="20.0dip"
+            android:layout_marginTop="40dip"
+            android:background="@drawable/shape_round_sent_pop">
+
+            <RelativeLayout
+                android:id="@+id/user_re"
+                android:layout_width="fill_parent"
+                android:layout_height="60.0dip">
+
+                <EditText
+                    android:id="@+id/login_user_account"
+                    android:layout_width="200.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="25.0dip"
+                    android:layout_toRightOf="@+id/user_image_login"
+                    android:background="@null"
+                    android:ems="10"
+                    android:gravity="start"
+                    android:hint="请输入账号"
+                    android:paddingBottom="3.0dip"
+                    android:paddingTop="3.0dip"
+                    android:textColor="@color/bigblack"
+                    android:textColorHint="@color/gray"
+                    android:textSize="16.0sp" />
+
+                <TextView
+                    android:id="@+id/user_image_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/login_user_account"
+                    android:paddingBottom="4.0dip"
+                    android:paddingLeft="12.0dip"
+                    android:text="账  号:"
+                    android:textColor="@color/bigblack"
+                    android:textSize="16.0sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:layout_above="@+id/password_re"
+                android:layout_alignParentLeft="true"
+                android:background="@color/gray" />
+
+            <RelativeLayout
+                android:id="@+id/password_re"
+                android:layout_width="fill_parent"
+                android:layout_height="60.0dip"
+                android:layout_below="@+id/user_re">
+
+                <EditText
+                    android:id="@+id/login_user_passwd"
+                    android:layout_width="200.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="25.0dip"
+                    android:layout_toRightOf="@+id/user_image_passwd"
+                    android:background="@null"
+                    android:ems="10"
+                    android:gravity="center|left"
+                    android:hint="请输入密码"
+                    android:inputType="textPassword"
+                    android:paddingBottom="3.0dip"
+                    android:paddingTop="3.0dip"
+                    android:textColor="@color/bigblack"
+                    android:textColorHint="@color/gray"
+                    android:textSize="16.0sp" />
+
+                <TextView
+                    android:id="@+id/user_image_passwd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/login_user_passwd"
+                    android:paddingBottom="4.0dip"
+                    android:paddingLeft="12.0dip"
+                    android:text="密  码:"
+                    android:textColor="@color/bigblack"
+                    android:textSize="16.0sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <ProgressBar
+            android:id="@+id/login_pb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout_fl"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20.0dip"
+        android:layout_marginRight="20.0dip"
+        android:background="@drawable/shape_round_login"
+        android:text="登录"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40.0dip"
+        android:text="北京恒达时讯科技有限公司"
+        android:textColor="@color/white" />
+
+</RelativeLayout>
